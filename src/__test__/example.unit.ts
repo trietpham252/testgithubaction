@@ -1,5 +1,5 @@
-describe('Integration Test', () => {
-    it('should run integration test', () => {
+describe('Sample Test', () => {
+    it('should pass', () => {
       expect(true).toBe(true);
     });
   });

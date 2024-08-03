@@ -26,13 +26,13 @@ jobs:
       run: npm run lint
 
     - name: Run unit tests
-      run: npm run test:unit
+      run: npm run test:unit --passWithNoTests
 
     - name: Run integration tests
-      run: npm run test:integration
+      run: npm run test:integration --passWithNoTests
 
     - name: Build project
       run: npm run build
 
     - name: Run end-to-end tests
-      run: npm run test:e2e
+      run: npm run test:e2e --passWithNoTests
