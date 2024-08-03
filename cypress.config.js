@@ -5,6 +5,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: 'http://localhost:3000', // URL của ứng dụng của bạn khi chạy kiểm thử
+    baseUrl: 'http://localhost:3000', // Đảm bảo rằng ứng dụng của bạn đang chạy trên cổng này
+    specPattern: 'cypress/integration/**/*.spec.{js,jsx,ts,tsx}', // Cập nhật đường dẫn tới thư mục kiểm thử
   },
 })
