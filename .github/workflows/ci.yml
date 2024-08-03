@@ -34,5 +34,13 @@ jobs:
     - name: Build project
       run: npm run build
 
+    - name: Start server
+      run: npm start &
+      env:
+        CI: true
+
+    - name: Wait for server to be ready
+      run: npx wait-on http://localhost:3000
+
     - name: Run end-to-end tests
       run: npm run test:e2e --passWithNoTests
